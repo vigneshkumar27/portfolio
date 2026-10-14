@@ -16,7 +16,7 @@
 <div class="main">
 <h1>Contact Me</h1>
 
-<form>
+<form onsubmit="sendMsg(); return false;">
     Name: <input type="text" name="name"><br><br>
     Email: <input type="text" name="email"><br><br>
     Message: <br>
@@ -24,7 +24,13 @@
     <input type="submit" value="Send">
 </form>
 
-<!-- need to show message sent after clicking send -->
+<p id="ack" style="color:green; font-weight:bold"></p>
+
+<script>
+function sendMsg() {
+    document.getElementById("ack").innerHTML = "Thank you! Your message is sent.";
+}
+</script>
 </div>
 
 </body>
