@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Testing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="jstest.html">JS Testing</a>
+</div>
+
+<div class="main">
+<h1>JS Testing</h1>
+<p>Click the button to get a post from the api (jsonplaceholder)</p>
+
+<button id="send-btn">Send request</button>
+
+<div id="result">
+    <p id="status">No request sent yet</p>
+    <div id="post-box" class="hidden">
+        <p><b>User Id:</b> <span id="userId"></span></p>
+        <p><b>Id:</b> <span id="postId"></span></p>
+        <p><b>Title:</b> <span id="title"></span></p>
+        <p><b>Body:</b> <span id="body"></span></p>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    <p>Made by Vic</p>
+    <p>HTML + CSS + JS practice project</p>
+    <a href="index.html">Back to home</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
